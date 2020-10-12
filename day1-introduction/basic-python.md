@@ -70,3 +70,53 @@ False #Bạn đang hát? Nếu sai, giá trị là False
 ['Banana', 10, False, 9.81] # Các phần tử có kiểu dữ liệu khác nhau - string, number, boolean, float
 ```
 
+### Dictionary
+
+Một python dictionary object là 1 tập hợp dữ liệu không có thứ tự ở định dạng `key:value`
+
+`{'name':'AnhTQ', 'country':'VietNam', 'age':24, 'is_married':False}`
+
+### Tuple
+
+Giống như **List** nhưng không thể thay đổi các bộ giá trị sau khi chúng được tạo. Chúng là bất biến (immutable)
+
+`('Ha Noi', 'Da Nang', 'Ho Chi Minh City')`
+
+### Set
+
+**Set** là một tập hợp các kiểu dữ liệu khác nhau như List và Tuple
+
+Không giống **List** và **Tuple**, **Set** không phải 1 tập hợp các mục có thứ tự. Giống như trong toán học, Set trong python chỉ những item duy nhất.
+
+`{3.14, 9.81, 2.7} # Thứ tự không quan trọng trong Set`
+
+### Check Data Types
+
+Sử dụng lệnh `type` để kiểm tra một dữ liệu nào đó thuộc kiểu dữ liệu nào
+
+<img src="https://imgur.com/IbhuzVm.png">
+
+## Chạy một file Python
+
+Sử dụng Windows PowerShell:
+
+- Kiểm tra version Python:
+
+```
+PS C:\Users\Quang Anh> python --version
+Python 3.7.9
+```
+
+- Truy cập đến đường dẫn lưu file Python muốn chạy:
+
+```
+PS C:\Users\Quang Anh> cd 'F:\Git\30days-python\day1-introduction'
+```
+
+- Chạy lệnh `python.exe` với file Python ta muốn:
+
+`PS F:\Git\30days-python\day1-introduction> python.exe .\result-day1.py`
+
+Kết quả hiện thị:
+
+<img src="https://imgur.com/Sc0KdW4.png">
