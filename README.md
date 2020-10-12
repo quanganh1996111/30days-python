@@ -1,5 +1,15 @@
 # Ngôn ngữ Python
 
+## Mục lục
+
+[1. Nguồn gốc được tạo ra](https://github.com/quanganh1996111/30days-python#1-ngu%E1%BB%93n-g%E1%BB%91c-%C4%91%C6%B0%E1%BB%A3c-t%E1%BA%A1o-ra)
+
+[2. Các phiên bản Python](https://github.com/quanganh1996111/30days-python#2-c%C3%A1c-phi%C3%AAn-b%E1%BA%A3n-python)
+
+[3. Tính năng của Python](https://github.com/quanganh1996111/30days-python#3-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-python)
+
+[4. Python được dùng ở đâu?](https://github.com/quanganh1996111/30days-python#4-python-%C4%91%C6%B0%E1%BB%A3c-d%C3%B9ng-%E1%BB%9F-%C4%91%C3%A2u)
+
 Python là ngôn ngữ lập trình hướng đối tượng, cấp cao, mạnh mẽ, được tạo ra bởi Guido van Rossum. Nó dễ dàng để tìm hiểu và đang nổi lên như một trong những ngôn ngữ lập trình nhập môn tốt nhất cho người lần đầu tiếp xúc với ngôn ngữ lập trình. Python hoàn toàn tạo kiểu động và sử dụng cơ chế cấp phát bộ nhớ tự động. Python có cấu trúc dữ liệu cấp cao mạnh mẽ và cách tiếp cận đơn giản nhưng hiệu quả đối với lập trình hướng đối tượng. Cú pháp lệnh của Python là điểm cộng vô cùng lớn vì sự rõ ràng, dễ hiểu và cách gõ linh động làm cho nó nhanh chóng trở thành một ngôn ngữ lý tưởng để viết script và phát triển ứng dụng trong nhiều lĩnh vực, ở hầu hết các nền tảng.
 
 ## 1. Nguồn gốc được tạo ra
