@@ -81,4 +81,48 @@ Kết quả:
 
 ## Data Types
 
-Trong Python có một kiểu dữ liệu, để kiểm tra kiểu dữ liệu ta sử dụng builtin-function `type`. Kiểu dữ liệu đã được giới thiệu trong 
+Trong Python có một kiểu dữ liệu, để kiểm tra kiểu dữ liệu ta sử dụng builtin-function `type`. Kiểu dữ liệu đã được giới thiệu trong [day1-introduction](https://github.com/quanganh1996111/30days-python/blob/master/day1-introduction/2-basic-python.md)
+
+Chuyển một kiểu dữ liệu sang một kiểu dữ liệu khác. Ta sử dụng `int(), float(), str(), list`. Khi chúng ta thực hiện các phép toán số học, đầu tiên các số chuỗi phải được chuyển đổi thành int hoặc float, nếu không nó sẽ trả về lỗi. Nếu chúng ta nối một giá trị kiểu `number` với một giá trị `string`, ta phải chuyển giá trị từ `number` sang `string` trước khi nối.
+
+Ví dụ:
+
+```
+num_int = 10
+print('num_int',num_int)         # 10
+num_float = float(num_int)
+print('num_float:', num_float)   # 10.0
+
+# float to int
+
+gravity = 9.81
+print(int(gravity))             # 9
+
+# int to str
+num_int = 10
+print(num_int)                  # 10
+num_str = str(num_int)
+print(num_str)                  # '10'
+
+# str to int
+num_str = '10.6'
+print('num_int', int(num_str))      # 10
+print('num_float', float(num_str))  # 10.6
+
+# str to list
+first_name = 'Asabeneh'
+print(first_name)
+print(first_name)                    # 'Asabeneh'
+first_name_to_list = list(first_name)
+print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
+```
+
+### Numbers Data types
+
+Các kiểu dữ liệu Number trong Python:
+
+- Integers: Số nguyên (nguyên âm, 0 và nguyên dương). Ví dụ: -3, -2, -2, 0, 1, 2, 3,...
+
+- Floating Point Numbers (Số thập phân). Ví dụ: 3.24, -3.13, -1.0, 0.0, 1.0, 2.5,...
+
+- Complex Numbers (Số phức). Ví dụ: 1 + j, 2 + 4j, 1 - 4j,... 
