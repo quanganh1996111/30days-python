@@ -86,4 +86,4 @@ print('Country: ',yourcountry)
 print('Age: ',yourage)
 
 # Help
-help('love')
+help(input('Moi ban nhap Keywords: '))
