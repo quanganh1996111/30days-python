@@ -84,3 +84,6 @@ print('First name: ',firstname)
 print('Last name: ',lastname)
 print('Country: ',yourcountry)
 print('Age: ',yourage)
+
+# Help
+help('love')
