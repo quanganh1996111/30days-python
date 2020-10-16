@@ -339,3 +339,206 @@ print(challenge.find('y'))  # 5
 print(challenge.find('th')) # 0
 ```
 
+- format(): Định dạng chuỗi sang một định dạng mà ta muốn. Ta có thể tham khảo [tại đây](https://www.programiz.com/python-programming/methods/string/format)
+
+```
+first_name = 'Asabeneh'
+last_name = 'Yetayeh'
+job = 'teacher'
+country = 'Finland'
+sentence = 'I am {} {}. I am a {}. I live in {}.'.format(first_name, last_name, job, country)
+print(sentence)
+
+# Result
+I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+```
+
+```
+radius = 10
+pi = 3.14
+area = pi * radius ** 2
+result = 'The area of a circle with radius {} is {}'.format(str(radius), str(area))
+print(result)
+
+# Result
+The area of a circle with radius 10 is 314.0
+```
+
+- index(): Trả về chỉ số thấp nhất của một chuỗi con, các đối số bổ sung cho biết chỉ số bắt đầu và kết thúc (mặc định là 0 và độ dài chuỗi - 1)
+
+```
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.index(sub_string)) # 7
+
+print(challenge.index(sub_string, 9))
+
+# Result
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+```
+
+- rindex(): Trả về chỉ số cao nhất của một chuỗi con, các đối số bổ sung cho biết chỉ số bắt đầu và kết thúc (mặc định là 0 và độ dài chuỗi - 1)
+
+```
+challenge = 'thirty days of python'
+sub_string = 'da'
+print(challenge.rindex(sub_string)) # 7
+
+print(challenge.rindex(sub_string, 9))
+
+# Result
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+```
+
+- isalnum(): Kiểm tra ký tự chữ và số
+
+```
+challenge = 'ThirtyDaysPython'
+print(challenge.isalnum()) # True
+
+challenge = '30DaysPython'
+print(challenge.isalnum()) # True
+
+challenge = 'thirty days of python'
+print(challenge.isalnum()) # False, space is not an alphanumeric character
+
+challenge = 'thirty days of python 2019'
+print(challenge.isalnum()) # False
+```
+
+- isalpha(): Kiểm tra xem tất cả các phần tử chuỗi có phải là các ký tự trong bảng chữ cái (a-z và A-Z) không
+
+```
+challenge = 'thirty days of python'
+print(challenge.isalpha()) # False, space is once again excluded
+challenge = 'ThirtyDaysPython'
+print(challenge.isalpha()) # True
+num = '123'
+print(num.isalpha())      # False
+```
+
+- isdecimal(): Kiểm tra xem tất cả các ký tự trong một chuỗi có phải là số thập phân (0-9) không
+
+```
+challenge = 'thirty days of python'
+print(challenge.isdecimal())  # False
+challenge = '123'
+print(challenge.isdecimal())  # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # False
+challenge = '12 3'
+print(challenge.isdecimal())  # False, no space allowed
+```
+
+- isdigit(): Kiểm tra xem tất cả các ký tự trong một chuỗi có phải là số không (0-9 và một số ký tự unicode khác cho các số)
+
+```
+challenge = 'Thirty'
+print(challenge.isdigit()) # False
+challenge = '30'
+print(challenge.isdigit())   # True
+challenge = '\u00B2'
+print(challenge.isdigit())   # True
+```
+
+- isnumeric(): Kiểm tra xem tất cả các ký tự trong một chuỗi có phải là số hoặc có liên quan đến số hay không (giống như isdigit (), chỉ cần chấp nhận nhiều ký hiệu hơn, như ½)
+
+```
+num = '10'
+print(num.isnumeric()) # True
+num = '\u00BD' # ½
+print(num.isnumeric()) # True
+num = '10.5'
+print(num.isnumeric()) # False
+```
+
+- isidentifier(): Kiểm tra giá trị nhận dạng hợp lệ - có nghĩa là nó sẽ kiểm tra, nếu một chuỗi là tên biến hợp lệ
+
+```
+challenge = '30DaysOfPython'
+print(challenge.isidentifier()) # False, because it starts with a number
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier()) # True
+```
+
+- islower(): Kiểm tra xem tất cả các ký tự bảng chữ cái trong chuỗi có phải là chữ thường không
+
+```
+challenge = 'thirty days of python'
+print(challenge.islower()) # True
+challenge = 'Thirty days of python'
+print(challenge.islower()) # False
+```
+
+- isupper(): Kiểm tra xem tất cả các ký tự bảng chữ cái trong chuỗi có phải là chữ hoa không
+
+```
+challenge = 'thirty days of python'
+print(challenge.isupper()) #  False
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper()) # True
+```
+
+- join(): Trả về một chuỗi được nối
+
+```
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = '# '.join(web_tech)
+print(result)
+
+# Result
+HTML# CSS# JavaScript# React
+```
+
+- strip(): Loại bỏ tất cả các ký tự đã cho bắt đầu từ đầu và cuối chuỗi
+
+```
+challenge = 'thirty days of pythoonnn'
+print(challenge.strip('noth')) # 'irty days of py'
+```
+
+- replace(): Thay thế chuỗi con bằng một chuỗi đã cho
+
+```
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'coding')) # 'thirty days of coding'
+```
+
+- split(): Tách chuỗi, sử dụng chuỗi đã cho làm dấu phân tách
+
+```
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python']
+challenge = 'thirty, days, of, python'
+print(challenge.split(', ')) # ['thirty', 'days', 'of', 'python']
+```
+
+- title(): Trả về một chuỗi viết hoa tiêu đề
+
+```
+challenge = 'thirty days of python'
+print(challenge.title()) # Thirty Days Of Python
+```
+
+- swapcase(): Chuyển đổi tất cả các ký tự viết hoa thành chữ thường và tất cả các ký tự thường thành ký tự viết hoa
+
+```
+challenge = 'thirty days of python'
+print(challenge.swapcase())   # THIRTY DAYS OF PYTHON
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase())  # tHIRTY dAYS oF pYTHON
+```
+
+- startswith(): Kiểm tra xem chuỗi có bắt đầu bằng chuỗi được chỉ định hay không
+
+```
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty')) # True
+
+challenge = '30 days of python'
+print(challenge.startswith('thirty')) # False
+```
