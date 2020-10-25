@@ -192,7 +192,7 @@ countries = [
   'Yemen',
   'Zambia',
   'Zimbabwe',
-];
+]
 
 print(len(countries))
 middle_country=countries[96]
