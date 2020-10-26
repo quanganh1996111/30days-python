@@ -24,7 +24,7 @@ pypart(n)
 print('Exercise 4: ')
 
 num_rows = 7
-num_cols = 7
+num_cols = 8
 
 for i in range(num_rows):
     print('# ', end=' ')
