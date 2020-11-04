@@ -9,5 +9,5 @@ def factorial(n):
             fact *= n
             n -= 1
     print(fact)
-n = int(input('Nhap so n: '))
+n = float(input('Nhap so n: '))
 factorial(n)
