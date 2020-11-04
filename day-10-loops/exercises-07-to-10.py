@@ -7,6 +7,8 @@ for j in num:
         print('Odd Numbers: ', j)
 
 num1=100
+tong = 0
 for e in range(0, num1+1, 1):
-    tong = tong + e;
+    tong = tong + e
+    
     print(tong)
